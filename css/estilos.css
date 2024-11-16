@@ -1,0 +1,114 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+h1{
+    padding-top: 30px;
+    color: #fb5454;
+    font-size: 3em;
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+    color: #fb6b6b;
+    text-align: center;
+}
+.header{
+    background-image: radial-gradient(circle, #9b9b9b, #a89faa, #bda0b2, #d6a0af, #eca2a2);
+    z-index: 1000;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    .logo{
+        width: 100px;
+    }
+    nav{
+        ul{
+            list-style-type:none;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+            
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 2em;
+            }
+            }
+        }
+    }
+}
+
+.principalIndex{
+    background-image: url(../assets/principalindex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100vh;
+    .contenedorTextoPrincipalIndex{
+        margin-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        width: 50%;
+        color: white;
+        backdrop-filter: blur(5px);
+        p{
+            font-size: 1.5rem;
+        }
+        a{
+            display:inline-block ;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            border: 2px solid black;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    }
+    
+}
+.productosDestacados{
+    img{
+        width: 200px;
+    }
+}
+
+.footer{
+    background-image: radial-gradient(circle, #9b9b9b, #a89faa, #bda0b2, #d6a0af, #eca2a2);
+    font-size: 10px;
+    .logo{
+        width: 100px;
+    }
+    nav{
+        ul{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5em;
+            }
+        }
+        .fa-instagram, .fa-x-twitter,.fa-facebook{
+            font-size: 3em;
+
+        }
+    }
+    .fa-whatsapp{
+        font-size: 5em;
+        color: rgb(66, 161,44);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
