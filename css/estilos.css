@@ -164,7 +164,67 @@ body{
 .video{
     width: 45vh;
     object-fit: cover;
+    @media (min-width: 768px) {
+        .video {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        }
 }
 .card{
     background-image: radial-gradient(circle, #9b9b9b, #a89faa, #bda0b2, #d6a0af, #eca2a2);  ;
 }
+}
+.video-container {
+    position: relative;
+    width: 30%; /* Ajusta el ancho según tu diseño (puedes usar 100% para pantallas pequeñas) */
+    padding-top: 56.25%; /* Mantiene la proporción de 16:9 */
+    overflow: hidden;
+}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el contenido sin distorsión */
+}
+@media (max-width: 768px) {
+    /* Para pantallas pequeñas */
+    .video-container {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 20px; /* Añade espacio entre los videos */
+    }
+}
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    gap: 10px; /* Espacio entre los contenedores */
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+}
+@media (max-width: 768px){
+    .footer {
+      flex-direction: column; /* Organización vertical */
+    text-align: center;
+    }
+    .footer nav ul {
+      text-align: center; /* Centrar los enlaces */
+    }
+    .footer .logo {
+    margin-bottom: 20px;
+    }
+
+    .footer form {
+      width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px;
+    }
+
+    .footer i {
+      font-size: 1.2em; /* Reduce el tamaño de los íconos en pantallas pequeñas */
+    }
+
+    .footer address {
+      font-size: 0.9em; /* Reduce el texto en pantallas pequeñas */}
+    .footer a{
+        margin: 10px;
+    }
+    }
