@@ -1,38 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>CherryRed</title>
-            <script src="https://kit.fontawesome.com/8ccaf04b7f.js" crossorigin="anonymous"></script>
-            <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-            <link rel="stylesheet" href="../css/bootstrap.min.css">
-            <link rel="stylesheet" href="../css/estilos.css">
-        <title>CherryRed</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ccaf04b7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>CherryRed | Carrito</title>
+</head>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-cereza">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/cereza.png" alt="Logo" width="80px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/productos.html">Productos</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                        <li class="listaItem"><a class="linksHeader" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        <script src="../js/bootstrap.bundle.min.js"></script>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/cereza.png" alt="Logo" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <h1>Carrito de Compras</h1>
+            <div id="cart-container">
+                <ul id="cart-items" class="list-group mb-3"></ul>
+                <p id="cart-total" class="fs-4">Total: $0</p>
+                <button id="clear-cart" class="btn btn-danger">Vaciar Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer d-flex justify-content-evenly ">
+        <a href="../index.html">
+            <img class="logo" src="../assets/cereza.png" alt="logo tienda de accesorios">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../productos.html">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Politicas de Privacidad</a></li>
+                <li><a href="">Terminos y Condiciones</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+        <div>
+            <form action="">
+                <input type="email" placeholder="Tu correo electronico" id="emailSus" name="emailSus">
+                <input type="submit" value="Suscribirse">
+            </form>
+        </div>
+            <address>
+                <p>Direccion italia 52,Lomas de Zamora,Buenos aires</p>
+                <p>Telefono (33)123-4567</p>
+                <p>Correo electronico: cherryred@trendy.com</p>
+            </address>
+    
+        <div><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <p>2024 CherryRed | Todos los derechos reservados</p>
+
+    </footer>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar carrito desde localStorage
+        function loadCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cartItems.innerHTML = '';
+
+            let total = 0;
+            cart.forEach((product, index) => {
+                const productPrice = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
+                total += productPrice;
+
+                const listItem = document.createElement('li');
+                listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                listItem.innerHTML = `
+                    <div>
+                        <img src="${product.image}" alt="${product.name}" width="50" class="me-3">
+                        <strong>${product.name}</strong> - ${product.price}
+                    </div>
+                    <button class="btn btn-danger btn-sm remove-item" data-index="${index}">Eliminar</button>
+                `;
+                cartItems.appendChild(listItem);
+            });
+
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        document.getElementById('cart-items').addEventListener('click', function (e) {
+            if (e.target.classList.contains('remove-item')) {
+                const index = e.target.getAttribute('data-index');
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.splice(index, 1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                loadCart();
+            }
+        });
+
+        document.getElementById('clear-cart').addEventListener('click', function () {
+        localStorage.removeItem('cart');
+        loadCart();
+        });
+
+        
+        window.addEventListener('DOMContentLoaded', loadCart);
+    </script>
 </body>
 </html>
